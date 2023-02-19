@@ -1,17 +1,13 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
-using System.Runtime.Remoting;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace MusicCacheParser
 {
@@ -404,7 +400,6 @@ namespace MusicCacheParser
                 tag.Year = (uint)date.Year;
                 if (song1.Disc != null)
                 {
-                    string s;
                     int disc;
                     if (int.TryParse(song1.Disc, out disc)) {
                         tag.Disc = (uint)disc;

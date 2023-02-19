@@ -3,16 +3,13 @@
 //    using QuickType;
 //
 //    var neteaseMusicDetails = NeteaseMusicDetails.FromJson(jsonString);
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
+using System.Globalization;
 
 namespace QuickType
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-
     public partial class NeteaseMusicDetails
     {
         [JsonProperty("songs")]
@@ -346,12 +343,7 @@ namespace QuickType
 
 namespace QuickType
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
     using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
 
     public partial class NeteaseIDX
     {
@@ -386,12 +378,7 @@ namespace QuickType
 
 namespace QuickType
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
     using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
 
     public partial class NeteaseInfo
     {
